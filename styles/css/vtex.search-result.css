@@ -49,3 +49,59 @@
 .totalProductsMessage {
 	color: #CCB28A;
 }
+
+.sidebar,
+.filterAccordionBreadcrumbs,
+.filterButtonsBox  {
+	background: #F4EDE7;
+}
+
+.filterAccordionBreadcrumbs {
+	border-color: transparent;
+}
+
+.filterBreadcrumbsText {
+	font-size: 14px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.filterButtonsBox {
+	border-color: transparent;
+}
+
+.accordionFilterContainer {
+	padding-left: 0;
+}
+
+.accordionFilterContent {
+	padding-left: 20px;
+}
+
+.accordionFilterItem {
+	border-color: #CCB28A;
+}
+
+.accordionFilterItemTitle {
+	color: #000000;
+	font-size: 14px;
+	font-weight: lighter;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.filterButtonsBox :global(.vtex-button) {
+	border: 0;
+	border-radius: 0;
+	padding: 15px;
+}
+
+.filterClearButtonWrapper :global(.vtex-button) {
+	background: #FFFFFF;
+	color: #000000;
+}
+
+.filterApplyButtonWrapper :global(.vtex-button) {
+	background: #000000;
+	color: #ffffff;
+}
