@@ -4,186 +4,225 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#department-books",
+      "menu-item#department-notebooks-pens",
+      "menu-item#department-office-supplies"
     ]
   },
-  "menu-item#category-apparel": {
+  "menu-item#department-books": {
     "props": {
-      "id": "menu-item-category-apparel",
+      "id": "menu-item-department-books",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/",
+        "href": "/books",
         "noFollow": false,
-        "tagTitle": "Apparel & Accessories",
-        "text": "Apparel & Accessories"
+        "tagTitle": "Books",
+        "text": "Books"
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#category-apparel"
+      "vtex.menu@2.x:submenu#department-books"
     ]
   },
-  "vtex.menu@2.x:submenu#category-apparel": {
+  "vtex.menu@2.x:submenu#department-books": {
     "props": {
       "width": "auto"
     },
     "children": [
-      "vtex.menu@2.x:menu#category-apparel"
+      "vtex.menu@2.x:menu#department-books"
     ]
   },
-  "vtex.menu@2.x:menu#category-apparel": {
+  "vtex.menu@2.x:menu#department-books": {
     "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#category-apparel-clothing",
-      "menu-item#category-apparel-accessories",
-      "menu-item#category-apparel-eyeglasses"
-    ]
-  },
-  "menu-item#category-apparel-clothing": {
-    "props": {
-      "id": "menu-item-category-apparel-clothing",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/apparel---accessories/clothing/",
-        "noFollow": false,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
-      }
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "menu-item-department-books-comics",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/books/comics/",
+            "noFollow": false,
+            "tagTitle": "Comics",
+            "text": "Comics"
+          }
+        },
+        {
+          "id": "menu-item-department-books-fiction",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/books/fiction/",
+            "noFollow": false,
+            "tagTitle": "Fiction",
+            "text": "Fiction"
+          }
+        },
+        {
+          "id": "menu-item-department-books-travel",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/books/travel/",
+            "noFollow": false,
+            "tagTitle": "Travel",
+            "text": "Travel"
+          }
+        }
+      ]
     }
   },
-  "menu-item#category-apparel-accessories": {
+  "menu-item#department-notebooks-pens": {
     "props": {
-      "id": "menu-item-category-apparel-accessories",
+      "id": "menu-item-department-notebooks-pens",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/accessories/",
+        "href": "/notebooks---pens",
         "noFollow": false,
-        "tagTitle": "Accessories",
-        "text": "Accessories"
-      }
-    }
-  },
-  "menu-item#category-apparel-eyeglasses": {
-    "props": {
-      "id": "menu-item-category-apparel-eyeglasses",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/apparel---accessories/eyeglasses/",
-        "noFollow": false,
-        "tagTitle": "Eyeglasses",
-        "text": "Eyeglasses"
-      }
-    }
-  },
-  "menu-item#category-home": {
-    "props": {
-      "id": "menu-item-category-home",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/home---decor/",
-        "noFollow": false,
-        "tagTitle": "Home & Decor",
-        "text": "Home & Decor"
-      }
-    }
-  },
-  "menu-item#more": {
-    "props": {
-      "id": "menu-item-custom-sale",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": true,
-        "tagTitle": "More",
-        "text": "More"
+        "tagTitle": "Notebooks & Pens",
+        "text": "Notebooks & Pens"
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#more"
+      "vtex.menu@2.x:submenu#department-notebooks-pens"
     ]
   },
-  "vtex.menu@2.x:submenu#more": {
+  "vtex.menu@2.x:submenu#department-notebooks-pens": {
     "props": {
-      "width": "100%"
+      "width": "auto"
     },
     "children": [
-      "flex-layout.row#menu-more"
+      "vtex.menu@2.x:menu#department-notebooks-pens"
     ]
   },
-  "flex-layout.row#menu-more": {
-    "children": [
-      "flex-layout.col#menu-more-1",
-      "flex-layout.col#menu-more-2"
-    ]
-  },
-  "flex-layout.col#menu-more-1": {
-    "children": [
-      "vtex.menu@2.x:menu#more"
-    ]
-  },
-  "flex-layout.col#menu-more-2": {
-    "children": [
-      "info-card#home"
-    ]
-  },
-  "vtex.menu@2.x:menu#more": {
+  "vtex.menu@2.x:menu#department-notebooks-pens": {
     "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#about-us",
-      "menu-item#faq"
-    ]
-  },
-  "menu-item#about-us": {
-    "props": {
-      "id": "menu-item-about-us",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/about-us",
-        "noFollow": true,
-        "tagTitle": "About us",
-        "text": "About us"
-      }
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "menu-item-department-notebooks-pens-notebooks",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/notebooks---pens/notebooks/",
+            "noFollow": false,
+            "tagTitle": "Notebooks",
+            "text": "Notebooks"
+          }
+        },
+        {
+          "id": "menu-item-department-notebooks-pens-pencil-cases",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/notebooks---pens/pencil-cases/",
+            "noFollow": false,
+            "tagTitle": "Pencil Cases",
+            "text": "Pencil Cases"
+          }
+        },
+        {
+          "id": "menu-item-department-notebooks-pens-pens",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/notebooks---pens/pens/",
+            "noFollow": false,
+            "tagTitle": "Pens",
+            "text": "Pens"
+          }
+        }
+      ]
     }
   },
-  "menu-item#faq": {
+  "menu-item#department-office-supplies": {
     "props": {
-      "id": "menu-item-faq",
+      "id": "menu-item-department-office-supplies",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/faq",
-        "noFollow": true,
-        "tagTitle": "FAQ",
-        "text": "FAQ"
+        "href": "/office-supplies",
+        "noFollow": false,
+        "tagTitle": "Office Supplies",
+        "text": "Office Supplies"
       }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#department-office-supplies"
+    ]
+  },
+  "vtex.menu@2.x:submenu#department-office-supplies": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#department-office-supplies"
+    ]
+  },
+  "vtex.menu@2.x:menu#department-office-supplies": {
+    "props": {
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "menu-item-department-office-supplies-staplers---punches",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/office-supplies/staplers---punches/",
+            "noFollow": false,
+            "tagTitle": "Staplers & Punches",
+            "text": "Staplers & Punches"
+          }
+        },
+        {
+          "id": "menu-item-department-office-supplies-paper-basics",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/office-supplies/paper-basics/",
+            "noFollow": false,
+            "tagTitle": "Paper Basics",
+            "text": "Paper Basics"
+          }
+        },
+        {
+          "id": "menu-item-department-office-supplies-clips---fasteners",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/office-supplies/clips---fasteners/",
+            "noFollow": false,
+            "tagTitle": "Clips & Fasteners",
+            "text": "Clips & Fasteners"
+          }
+        }
+      ]
     }
   }
 }
