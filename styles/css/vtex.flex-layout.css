@@ -96,3 +96,29 @@
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
 }
+
+.flexRow--institutionalContainer{
+  padding: 2em 0;
+}
+/*
+.flexCol--institucionalSidebarMobile{
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: #f4ede7;
+  z-index: 999;
+  max-width: 335px;
+  padding: 1em 2em;
+} */
+
+@media screen and (max-width: 1025px) {
+  .flexRowContent--institutionalContainer{
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 641px) {
+  .flexRow--institutionalContainer{
+    padding: 0;
+  }
+}
+
