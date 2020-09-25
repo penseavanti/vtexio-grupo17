@@ -36,18 +36,85 @@
   padding-right: 5px;
 }
 
+.infoCardContainer--info-card-home :global(.vtex-button) {
+  background: #000;
+  border: none;
+  outline: none;
+  border-radius: 0;
+}
 .infoCardContainer--info-card-home {
   max-width: 1520px;
   margin: 0 auto;
-  background-color: #e6f1e6;
+  background-color: #E6DCD6;
   padding: 0px;
 }
 
 .newsletter {
-  background-color: #03054e;
+  background-color: #EFCAA4;
   max-width: 1528px;
   margin: 0 auto;
 }
+
+.newsletter .inputGroup {
+  display: block;
+}
+.newsletter :global(.vtex-input-prefix__group) {
+  border-color: #000000;
+}
+
+.newsletter :global(.vtex-styleguide-9-x-input) {
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  line-height: 12px;
+  text-align: left;
+  color: #000 !important;
+}
+.newsletter :global(.vtex-styleguide-9-x-input) ::placeholder {
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  line-height: 12px;
+  text-align: left;
+  color: #000 !important;
+}
+
+.newsletter :global(.vtex-button__label) {
+  font-weight: bold;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  line-height: 30px;
+  text-align: left;
+  color: #17100d;
+}
+.newsletter :global(.vtex-button) {
+  align-items: center;
+  margin: auto;
+  display: flex;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+}
+.newsletter :global(.vtex-button):hover {
+  border: 1px solid black;
+}
+
+.newsletter .form {
+  margin: auto;
+}
+.newsletter .buttonContainer {
+  padding: 0;
+}
+
+.newsletter .label {
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  line-height: 12px;
+  text-align: left;
+  color: #17100d;
+}
+
 
 .newsletter .container {
   padding: 60px 10px;
@@ -79,7 +146,6 @@
   background-color: transparent;
   color: #fff;
   border: none;
-  margin-right: -24px;
 }
 
 .buttonContainer {
@@ -283,6 +349,10 @@
   line-height: 40px;
   width: 80px;
   cursor: pointer;
+}
+
+.container {
+  margin: auto
 }
 
 @media (min-width: 1024px) {

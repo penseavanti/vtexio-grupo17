@@ -27,6 +27,18 @@
   text-align: left;
   color: #17100d;
 }
+.paragraph--footer {
+  margin: 0;
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  line-height: 12px;
+  text-align: center;
+  color: #17100d;
+}
+.wrapper--footer {
+  margin: 20px auto;
+}
 
 .container--link {
   justify-content: center;
@@ -38,10 +50,11 @@
 
 .container--question .paragraph {
   text-align: center;
-  max-width: 540px;
+  max-width: 661px;
   margin: 0 16px;
   padding-top: 120px;
-  color: #03034e;
+  color: #000;
+  text-transform: uppercase;
 }
 
 .container--question .strong {
