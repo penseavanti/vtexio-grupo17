@@ -7,5 +7,14 @@
   },
   "store.custom#exchanges-returns": {
     "path": "/troca-e-devolucoes"
-  }  
+  }, 
+  "store.custom#faq": {
+    "path": "/faq"
+  },
+  "store.custom#landing-aws": {
+    "path": "/promo/aws"
+  },
+  "store.custom#landing-blackfriday": {
+    "path": "/promo/black-friday"
+  }
 }
