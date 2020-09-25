@@ -25,3 +25,15 @@
   padding-left: .5rem;
   padding-right: .5rem;
 }
+
+
+.sliderTrackContainer--landing-carousel {
+  width: 100%;
+  max-width: none;
+}
+
+.sliderLayoutContainer--landing-carousel {
+  justify-content: center;
+  background-color: #f4ede7 !important;
+  position: relative;
+}
