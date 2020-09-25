@@ -1,43 +1,43 @@
 {
-  "store.custom#about-us": {
+  "store.custom#exchanges-returns": {
     "blocks": [
-      "responsive-layout.desktop",
-      "responsive-layout.tablet",
-      "responsive-layout.phone"
+      "responsive-layout.desktop#exchanges-returns",
+      "responsive-layout.tablet#exchanges-returns",
+      "responsive-layout.phone#exchanges-returns"
     ]    
   },
 
-  "responsive-layout.desktop": {
+  "responsive-layout.desktop#exchanges-returns": {
     "children": [
       "stack-layout#institutional-banner",
-      "flex-layout.row#about-us-desktop"
+      "flex-layout.row#exchanges-returns-desktop"
     ]
   },
-  "responsive-layout.tablet": {
+  "responsive-layout.tablet#exchanges-returns": {
     "children": [
       "stack-layout#institutional-banner",
-      "flex-layout.row#about-us-menu-mobile",
-      "flex-layout.row#about-us-mobile"
+      "flex-layout.row#exchanges-returns-menu-mobile",
+      "flex-layout.row#exchanges-returns-mobile"
     ]
   },
-  "responsive-layout.phone": {
+  "responsive-layout.phone#exchanges-returns": {
     "children": [
-      "flex-layout.row#about-us-menu-mobile",
-      "flex-layout.row#about-us-mobile"
+      "flex-layout.row#exchanges-returns-menu-mobile",
+      "flex-layout.row#exchanges-returns-mobile"
     ]
   },
 
-  "flex-layout.row#about-us-desktop": {
+  "flex-layout.row#exchanges-returns-desktop": {
     "children": [  
       "flex-layout.col#institutional-sidebar-desktop",    
-      "flex-layout.col#content-about-us"
+      "flex-layout.col#content-exchanges-returns"
     ],
     "props": {
       "blockClass": "institutionalContainer"
     }
   },
 
-  "flex-layout.row#about-us-menu-mobile": {
+  "flex-layout.row#exchanges-returns-menu-mobile": {
     "children": [  
       "flex-layout.col#institutional-sidebar-mobile"
     ],
@@ -46,19 +46,19 @@
     }
   },
 
-  "flex-layout.row#about-us-mobile": {
+  "flex-layout.row#exchanges-returns-mobile": {
     "children": [      
-      "flex-layout.col#content-about-us"
+      "flex-layout.col#content-exchanges-returns"
     ],
     "props": {
       "blockClass": "institutionalContainer"
     }
   },
 
-  "flex-layout.col#content-about-us": {
+  "flex-layout.col#content-exchanges-returns": {
     "children": [
-      "rich-text#title-about-us",
-      "rich-text#about-us"
+      "rich-text#title-exchanges-returns",
+      "rich-text#exchanges-returns"
     ],
     "props": {
       "blockClass": "textColumn",
@@ -66,16 +66,16 @@
     }
   },
 
-  "rich-text#title-about-us": {
+  "rich-text#title-exchanges-returns": {
     "props": {
       "text":
-      "QUEM SOMOS",
+      "TROCAS E DEVOLUÇÔES",
       "blockClass": "pageTitle",
       "textAlignment": "CENTER"
     }
   },
 
-  "rich-text#about-us": {
+  "rich-text#exchanges-returns": {
     "props": {
       "text": "**What is Lorem Ipsum?** \n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. \n \n **Why do we use it?** \n It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). \n \n **What is Lorem Ipsum?** \n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. \n \n **Why do we use it?** \n It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
       "blockClass": "aboutContent"

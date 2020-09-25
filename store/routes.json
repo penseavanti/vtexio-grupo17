@@ -1,5 +1,11 @@
 {
   "store.custom#about-us": {
     "path": "/quem-somos"
-  }
+  },
+  "store.custom#contact-us": {
+    "path": "/fale-conosco"
+  },
+  "store.custom#exchanges-returns": {
+    "path": "/troca-e-devolucoes"
+  }  
 }

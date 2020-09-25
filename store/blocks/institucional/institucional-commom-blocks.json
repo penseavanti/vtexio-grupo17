@@ -38,11 +38,21 @@
   "flex-layout.col#institutional-sidebar-mobile": {
     "children": [
       "drawer#sidebar-filter"     
-    ],
+    ],    
     "props": {
       "blockClass": "institucionalSidebarMobile",
       "preventVerticalStretch": true,
       "width":"100%"
+    }
+  },
+  "drawer-trigger#sidebar-filter": {
+    "children": ["rich-text#open-sidebar-filter"]
+  },
+  "rich-text#open-sidebar-filter": {
+    "props": {
+      "text": "Selecione o menu",
+      "blockClass": "sidebarMenuSelectText",
+      "textAlignment": "CENTER"
     }
   },
   "rich-text#sidebar-title-fixed": {
@@ -57,8 +67,10 @@
       "rich-text#sidebar-menu-title",      
       "vtex.menu@2.x:menu#sidebar-menu"
     ],
+    "blocks": ["drawer-trigger#sidebar-filter"],
     "props": {
-      "orientation": "vertical"
+      "orientation": "vertical",
+      "blockClass": "sidebarMenuConteiner"
     }
   },
   "rich-text#sidebar-menu-title": {
@@ -110,7 +122,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/trocas-e-devolucoes",
+            "href": "/troca-e-devolucoes",
             "noFollow": true,
             "tagTitle": "Trocas e Devoluções",
             "text": "Trocas e Devoluções"

@@ -44,7 +44,6 @@
 }
 .styledLinkContainer--sidebarMenu{
   margin:0;
-  padding: .5rem 0;
 }
 .styledLinkContent--sidebarMenu{
   text-transform: uppercase;
@@ -52,7 +51,11 @@
   color: #000000;
 }
 
-
+@media screen and (max-width: 1025px) {
+  .menuContainerNav--sidebarMenu{
+    margin-left: 1em;
+  }
+}
 
 
 
