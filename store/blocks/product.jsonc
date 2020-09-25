@@ -100,9 +100,7 @@
     "props": {
       "marginBottom": 3
     },
-    "children": [
-      "vtex.store-components:product-name"
-    ]
+    "children": ["vtex.store-components:product-name"]
   },
 
   "sku-selector": {

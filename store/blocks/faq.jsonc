@@ -3,16 +3,11 @@
     "props": {
       "blockClass": "faq"
     },
-    "children": [
-      "flex-layout.col#faq"
-    ]
+    "children": ["flex-layout.col#faq"]
   },
 
   "flex-layout.col#faq": {
-    "children": [
-      "rich-text#faq",
-      "disclosure-layout-group#group"
-    ]
+    "children": ["rich-text#faq", "disclosure-layout-group#group"]
   },
   "rich-text#faq": {
     "props": {
@@ -89,7 +84,6 @@
     }
   },
 
-
   "disclosure-layout#third": {
     "props": {
       "animated": true
@@ -120,7 +114,6 @@
     }
   },
 
-
   "disclosure-layout#fourth": {
     "props": {
       "animated": true
@@ -150,7 +143,6 @@
       "text": "After logging into your account, you can find this info at the link Orders."
     }
   },
-
 
   "disclosure-state-indicator": {
     "props": {
