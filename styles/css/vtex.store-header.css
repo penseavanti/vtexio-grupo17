@@ -24,9 +24,7 @@
 
 /* add a box-shadow to desktop/mobile header when stuck */
 :global(.vtex-sticky-layout-0-x-wrapper--stuck)
-  :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
-:global(.vtex-sticky-layout-0-x-wrapper--stuck)
-  :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -46,7 +44,9 @@
   :global(.vtex-sticky-layout-0-x-wrapper--stuck)
     :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
   :global(.vtex-sticky-layout-0-x-wrapper--stuck)
-    :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile),
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck)
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile-search-bar) :global(.vtex-store-components-3-x-searchBarContainer) {
     backdrop-filter: blur(8px);
   }
 
@@ -54,8 +54,10 @@
   :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover)
     :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
   :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover)
-    :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
-    background: rgba(240, 240, 240, 0.8);
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile),
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover)
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile-search-bar) :global(.vtex-store-components-3-x-searchBarContainer) {
+    background: #ffffffb3;
   }
 }
 

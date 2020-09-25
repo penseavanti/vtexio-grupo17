@@ -26,3 +26,34 @@
   padding-left: .5rem;
   padding-right: .5rem;
 }
+
+.paginationDot {
+  width: 9px !important;
+  height: 9px !important;
+  background: #EFCAA4;
+}
+.paginationDot--isActive {
+  background: #000000;
+
+}
+.sliderLeftArrow--shelf,
+.sliderRightArrow--shelf {
+  top: 140px;
+}
+
+.sliderLeftArrow {
+  background: white !important;
+  left: 35px;
+  padding: 10px;
+}
+.sliderRightArrow {
+  background: white !important;
+  right: 35px;
+  padding: 10px;
+}
+
+/* @media (max-width) {
+  .sliderLayoutContainer--carousel{
+    margin-top: -84px;
+  }
+} */

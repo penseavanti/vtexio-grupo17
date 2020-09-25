@@ -137,9 +137,7 @@
       "marginBottom": 3,
       "blockClass": "mainProductName"
     },
-    "children": [
-      "vtex.store-components:product-name"
-    ]
+    "children": ["vtex.store-components:product-name"]
   },
 
   "sku-selector": {

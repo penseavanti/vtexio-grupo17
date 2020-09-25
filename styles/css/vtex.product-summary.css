@@ -1,4 +1,5 @@
-.skuSelectorContainer--quickview .skuSelectorItemImage .frameAround, .skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
+.skuSelectorContainer--quickview .skuSelectorItemImage .frameAround,
+.skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
   border-radius: 50%;
 }
 
@@ -14,7 +15,7 @@
 @media screen and (max-width: 40em) {
   .container :global(.vtex-modal-layout-0-x-triggerContainer) {
     display: none;
-  } 
+  }
 }
 
 .nameContainer {
@@ -24,9 +25,11 @@
 }
 
 .brandName {
-  font-weight: 600;
-  font-size: 18px;
-  color: #2E2E2E;
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #000;
 }
 
 .container {
@@ -39,4 +42,43 @@
 
 .image {
   border-radius: 0.25rem;
+  mix-blend-mode: multiply;
+  margin: 0 auto;
+  will-change: opacity;
+}
+.element  {
+  position: relative;
+}
+
+.element :global(.vtex-reviews-and-ratings-1-x-inlineContainer) {
+  display: none;
+}
+.element :global(.vtex-button) {
+  width: 250px;
+  height: 53px;
+  background: #000;
+  border-radius: 0;
+  border: none;
+  top: 245px;
+  display: none;
+  position: absolute;
+  align-self: center;
+}
+.element :global(.vtex-stack-layout-0-x-stackContainer) {
+  background: #f6f6f6;
+}
+
+.element:hover :global(.vtex-button) {
+  display: block;
+}
+.element :global(.vtex-button) :global(.vtex-add-to-cart-button-0-x-buttonText) {
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+
+}
+
+.nameContainer {
+  padding: 0;
 }

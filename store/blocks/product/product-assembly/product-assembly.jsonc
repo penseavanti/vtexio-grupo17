@@ -34,17 +34,13 @@
     "props": {
       "verticalAlign": "middle"
     },
-    "children": [
-      "assembly-option-item-quantity-selector"
-    ]
+    "children": ["assembly-option-item-quantity-selector"]
   },
   "flex-layout.col#product-assembly-image": {
     "props": {
       "marginRight": 4
     },
-    "children": [
-      "assembly-option-item-image"
-    ]
+    "children": ["assembly-option-item-image"]
   },
   "flex-layout.col#product-assembly-middle": {
     "props": {
@@ -98,9 +94,7 @@
       "horizontalAlign": "right",
       "verticalAlign": "middle"
     },
-    "children": [
-      "assembly-option-item-quantity-selector"
-    ]
+    "children": ["assembly-option-item-quantity-selector"]
   },
   "assembly-option-item-customize#sec-level": {
     "props": {

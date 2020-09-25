@@ -20,6 +20,12 @@
 
 .container--deals .paragraph {
   margin: 0;
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  line-height: 12px;
+  text-align: left;
+  color: #17100d;
 }
 
 .container--link {
@@ -35,7 +41,7 @@
   max-width: 540px;
   margin: 0 16px;
   padding-top: 120px;
-  color: #03034E;
+  color: #03034e;
 }
 
 .container--question .strong {
@@ -49,7 +55,7 @@
   max-width: 540px;
   padding-top: 36px;
   padding-bottom: 84px;
-  color: #03034E;
+  color: #03034e;
 }
 
 .container--link .strong {
@@ -62,11 +68,11 @@
   text-decoration: none;
   font-size: 36px;
   font-weight: 300;
-  color: #03034E;
+  color: #03034e;
 }
 
 .container--title {
-  color: #03034E;
+  color: #03034e;
   font-size: 28px;
   font-weight: 700;
 }
@@ -82,7 +88,7 @@
   }
 
   .container--title {
-    color: #03034E;
+    color: #03034e;
     font-size: 40px;
     font-weight: 700;
     max-width: 60%;
@@ -91,4 +97,14 @@
   .container--title .paragraph {
     line-height: 1.3em;
   }
+}
+
+.heading--shelfTitle {
+  margin-top: 100px;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  line-height: 12px;
+  text-align: left;
+  color: #17100d;
 }

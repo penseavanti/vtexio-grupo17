@@ -1,0 +1,25 @@
+.container {
+	font-size: 12px;
+}
+
+.container :global(.vtex-breadcrumb-1-x-homeIcon) {
+	display: none;
+}
+.container .homeLink::before {
+	color: #000000;
+	content: 'Home';
+	letter-spacing: 0.5px;
+}
+
+.container :global(.vtex-breadcrumb-1-x-arrow--1) .link {
+	color: #CCB28A;
+	font-size: 12px;
+	position: relative;
+	top: 1px;
+	letter-spacing: 0.5px;
+}
+
+.caretIcon {
+	fill: #000000;
+	margin-right: 3px;
+}
