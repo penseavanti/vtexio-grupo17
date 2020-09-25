@@ -1,6 +1,6 @@
 {
   "vendor": "bookstoretheme",
-  "name": "sandbox",
+  "name": "livre-se",
   "version": "0.0.1",
   "builders": {
     "assets": "0.x",
