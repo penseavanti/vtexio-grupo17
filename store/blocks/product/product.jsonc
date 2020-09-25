@@ -3,24 +3,40 @@
     "children": [
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
+      "__fold__",
       "flex-layout.row#description",
-      "shelf.relatedProducts",
-      "product-reviews",
-      "product-questions-and-answers"
+      "rich-text#shelf-title-product-qvvt",
+      "list-context.product-list#product-qvvt",
+      "__fold__",
+      "rich-text#shelf-title-product-qcct",
+      "list-context.product-list#product-qcct",
+      "product-images.high-quality-image"
     ]
   },
+
   "flex-layout.row#product-breadcrumb": {
     "props": {
       "marginTop": 4
     },
     "children": ["breadcrumb"]
   },
+
+  "breadcrumb": {
+    "props": {
+      "showOnMobile": false
+    }
+  },
+
   "flex-layout.row#description": {
     "props": {
-      "marginBottom": 7
+      "marginBottom": 7,
+      "blockClass": "productDescriptionText"
     },
-    "children": ["product-description"]
+    "children": [
+      "product-description"
+    ]
   },
+
   "flex-layout.row#product-main": {
     "props": {
       "colGap": 7,
@@ -60,18 +76,40 @@
       "rowGap": 0
     }
   },
+
   "flex-layout.row#product-image": {
     "children": ["product-images"]
   },
+
+  "product-images.high-quality-image": {
+    "props": {
+      "zoomMode": "in-place-click",
+      "zoomFactor": 2
+    }
+  },
+
+  "modal-layout#product-zoom": {
+    "children": [
+      "flex-layout.row#product-name",
+      "product-images.high-quality-image"
+    ]
+  },
+
   "product-images": {
     "props": {
+      "ModalZoom": "modal-layout#product-zoom",
+      "zoomMode": "open-modal",
       "aspectRatio": {
         "desktop": "auto",
         "phone": "16:9"
       },
-      "displayThumbnailsArrows": true
+      "displayThumbnailsArrows": false,
+      "thumbnailMaxHeight": 121,
+      "showPaginationDots": false,
+      "showNavigationArrows": false
     }
   },
+
   "flex-layout.col#right-col": {
     "props": {
       "preventVerticalStretch": true,
@@ -79,26 +117,25 @@
     },
     "children": [
       "flex-layout.row#product-name",
+      "product-identifier.product",
       "product-rating-summary",
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
       "product-installments",
-      "product-separator",
-      "product-identifier.product",
       "sku-selector",
       "product-quantity",
       "product-assembly-options",
       "product-gifts",
       "flex-layout.row#buy-button",
       "availability-subscriber",
-      "shipping-simulator",
-      "share#default"
+      "shipping-simulator"
     ]
   },
 
   "flex-layout.row#product-name": {
     "props": {
-      "marginBottom": 3
+      "marginBottom": 3,
+      "blockClass": "mainProductName"
     },
     "children": ["vtex.store-components:product-name"]
   },
@@ -106,33 +143,76 @@
   "sku-selector": {
     "props": {
       "variationsSpacing": 3,
-      "showValueNameForImageVariation": true
+      "showValueNameForImageVariation": true,
+      "blockClass": "skuSelector"
     }
   },
 
   "product-price#product-details": {
     "props": {
       "showInstallments": true,
-      "showSavings": true
+      "showSavings": true,
+      "blockClass": "productDetails"
     }
   },
 
   "flex-layout.row#buy-button": {
     "props": {
       "marginTop": 4,
-      "marginBottom": 7
+      "marginBottom": 7,
+      "blockClass": "buyButtonProduct"
     },
-    "children": ["add-to-cart-button"]
+    "children": ["add-to-cart-button#product"]
   },
 
-  "share#default": {
+  "add-to-cart-button#product": {
     "props": {
-      "social": {
-        "Facebook": true,
-        "WhatsApp": true,
-        "Twitter": false,
-        "Pinterest": true
-      }
+      "text": "Comprar"
     }
+  },
+
+  "shipping-simulator": {
+    "props": {
+      "blockClass": "productShipping"
+    }
+  },
+
+  "rich-text#shelf-title-product-qvvt": {
+    "props": {
+      "text": "## quem viu, viu também",
+      "blockClass": "shelfTitle"
+    }
+  },
+
+  "list-context.product-list#product-qvvt": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout"
+    ]
+  },
+
+  "rich-text#shelf-title-product-qcct": {
+    "props": {
+      "text": "## quem viu, viu também",
+      "blockClass": "shelfTitle"
+    }
+  },
+
+  "list-context.product-list#product-qcct": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout"
+    ]
+  },
+
+  "product-summary.shelf": {
+    "children": [
+      "product-summary-name",
+      "product-selling-price"
+    ]
   }
 }

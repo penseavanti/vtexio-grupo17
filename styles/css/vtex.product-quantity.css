@@ -1,0 +1,28 @@
+.quantitySelectorContainer {
+  margin: 20px 0;
+}
+
+.quantitySelectorTitle {
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper__plus-button),
+.quantitySelectorStepper :global(.vtex-numeric-stepper__minus-button),
+.quantitySelectorStepper :global(.vtex-numeric-stepper__input) {
+  height: 40px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 0;
+  border-color: #F8F4F0;
+  background-color: #F8F4F0;
+}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper__plus-button__text),
+.quantitySelectorStepper :global(.vtex-numeric-stepper__minus-button__text) {
+  font-size: 14px;
+}
