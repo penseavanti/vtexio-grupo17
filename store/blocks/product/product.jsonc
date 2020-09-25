@@ -88,17 +88,8 @@
     }
   },
 
-  "modal-layout#product-zoom": {
-    "children": [
-      "flex-layout.row#product-name",
-      "product-images.high-quality-image"
-    ]
-  },
-
   "product-images": {
     "props": {
-      "ModalZoom": "modal-layout#product-zoom",
-      "zoomMode": "open-modal",
       "aspectRatio": {
         "desktop": "auto",
         "phone": "16:9"
