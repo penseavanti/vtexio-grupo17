@@ -10,8 +10,6 @@
   z-index: 999;
 }
 
-
-
 .searchBarContainer :global(.vtex-styleguide-9-x-input) {
   font-weight: normal;
   font-size: 12px;

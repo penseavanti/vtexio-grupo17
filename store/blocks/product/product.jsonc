@@ -18,10 +18,10 @@
     "props": {
       "marginTop": 4
     },
-    "children": ["breadcrumb"]
+    "children": ["breadcrumb#product"]
   },
 
-  "breadcrumb": {
+  "breadcrumb#product": {
     "props": {
       "showOnMobile": false
     }
@@ -186,10 +186,17 @@
 
   "list-context.product-list#product-qvvt": {
     "blocks": [
-      "product-summary.shelf"
+      "product-summary.shelf#product-qvvt"
     ],
     "children": [
       "slider-layout"
+    ]
+  },
+
+  "product-summary.shelf#product-qvvt": {
+    "children": [
+      "product-summary-name",
+      "product-selling-price"
     ]
   },
 
@@ -209,7 +216,7 @@
     ]
   },
 
-  "product-summary.shelf": {
+  "product-summary.shelf#product-qcct": {
     "children": [
       "product-summary-name",
       "product-selling-price"
