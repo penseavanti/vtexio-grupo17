@@ -57,10 +57,7 @@
     }
   },
   "stack-layout#prodsum": {
-    "children": [
-      "product-summary-image#shelf",
-      "modal-trigger#quickview"
-    ]
+    "children": ["product-summary-image#shelf", "modal-trigger#quickview"]
   },
 
   "product-summary-image": {
@@ -96,8 +93,6 @@
     "blocks": ["rich-text#not-found"]
   },
   "store.custom#faq": {
-    "children": [
-      "flex-layout.row#faq"
-    ]
+    "children": ["flex-layout.row#faq"]
   }
 }

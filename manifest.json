@@ -1,8 +1,9 @@
 {
-  "vendor": "vtex",
-  "name": "store-theme",
-  "version": "3.38.0",
+  "vendor": "bookstoretheme",
+  "name": "sandbox",
+  "version": "0.0.1",
   "builders": {
+    "assets": "0.x",
     "styles": "2.x",
     "store": "0.x",
     "sitemap": "0.x",
@@ -23,6 +24,7 @@
     "vtex.carousel": "2.x",
     "vtex.shelf": "1.x",
     "vtex.menu": "2.x",
+    "vtex.css-handles": "0.x",
     "vtex.minicart": "2.x",
     "vtex.product-details": "1.x",
     "vtex.product-kit": "1.x",
@@ -55,7 +57,8 @@
     "vtex.store-link": "0.x",
     "vtex.product-gifts": "0.x",
     "vtex.product-price": "1.x",
-    "vtex.disclosure-layout": "1.x"
+    "vtex.disclosure-layout": "1.x",
+    "bookstoretheme.apps": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
