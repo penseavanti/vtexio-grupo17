@@ -1,0 +1,136 @@
+{ 
+
+  "stack-layout#institutional-banner": { 
+    "children": [
+      "image#institutional-banner",
+      "rich-text#institutional-title"
+    ]
+  },
+
+  "image#institutional-banner": {
+    "props": {
+      "src": "assets/banner-institucional.jpg",
+      "blockClass": "institucionalBanner"
+    }
+  },
+
+  "rich-text#institutional-title": {
+    "props": {
+      "text": "Institucional",
+      "blockClass": "institucionalTitle",
+      "textColor": "#000000",
+      "font": "t-heading-2"
+    }
+  },
+
+  "flex-layout.col#institutional-sidebar-desktop": {
+    "children": [
+      "rich-text#sidebar-menu-title",
+      "vtex.menu@2.x:menu#sidebar-menu"
+    ],
+    "props": {
+      "blockClass": "institucionalSidebar",
+      "preventVerticalStretch": true,
+      "width":"20%"
+    }
+  },
+
+  "flex-layout.col#institutional-sidebar-mobile": {
+    "children": [
+      "drawer#sidebar-filter"     
+    ],    
+    "props": {
+      "blockClass": "institucionalSidebarMobile",
+      "preventVerticalStretch": true,
+      "width":"100%"
+    }
+  },
+  "drawer-trigger#sidebar-filter": {
+    "children": ["rich-text#open-sidebar-filter"]
+  },
+  "rich-text#open-sidebar-filter": {
+    "props": {
+      "text": "Selecione o menu",
+      "blockClass": "sidebarMenuSelectText",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#sidebar-title-fixed": {
+    "props": {
+      "text": "Menu",
+      "blockClass": "sidebarTitle"
+    }
+  },
+  "drawer#sidebar-filter": {
+    "children": [
+      "rich-text#sidebar-title-fixed",
+      "rich-text#sidebar-menu-title",      
+      "vtex.menu@2.x:menu#sidebar-menu"
+    ],
+    "blocks": ["drawer-trigger#sidebar-filter"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "sidebarMenuConteiner"
+    }
+  },
+  "rich-text#sidebar-menu-title": {
+    "props": {
+      "text": "Sobre",
+      "blockClass": "sidebarMenuTitle"
+    }
+  },
+  "rich-text#sidebar-menu-select": {
+    "props": {
+      "text": "Selecione o menu",
+      "blockClass": "sidebarMenuSelectText",
+      "textAlignment": "CENTER"
+    }
+  },
+  "vtex.menu@2.x:menu#sidebar-menu": {
+    "props": {
+      "items": [
+        {
+          "id": "menu-item-about-us",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/quem-somos",
+            "noFollow": true,
+            "tagTitle": "Quem somos",
+            "text": "Quem somos"
+          }
+        },
+        {
+          "id": "menu-item-contact-us",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/fale-conosco",
+            "noFollow": true,
+            "tagTitle": "Fale conosco",
+            "text": "Fale conosco"
+          }
+        },
+        {
+          "id": "menu-item-exchanges-returns",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/troca-e-devolucoes",
+            "noFollow": true,
+            "tagTitle": "Trocas e Devoluções",
+            "text": "Trocas e Devoluções"
+          }
+        }
+      ],
+      "blockClass": "sidebarMenu",
+      "orientation": "vertical"
+    }
+  }
+}

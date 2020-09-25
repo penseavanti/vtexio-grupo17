@@ -35,7 +35,27 @@
 
 }
 
+.menuContainerNav--sidebarMenu{
+  max-width: 200px;
+}
 
+.menuItem--sidebarMenu:hover{
+  text-decoration: underline;
+}
+.styledLinkContainer--sidebarMenu{
+  margin:0;
+}
+.styledLinkContent--sidebarMenu{
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #000000;
+}
+
+@media screen and (max-width: 1025px) {
+  .menuContainerNav--sidebarMenu{
+    margin-left: 1em;
+  }
+}
 
 
 
