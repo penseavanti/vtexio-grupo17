@@ -1,3 +1,14 @@
 .product-identifier--productReference {
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  margin-top: 0;
   margin-bottom: 1rem;
+}
+
+.product-identifier__label,
+.product-identifier__value {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }

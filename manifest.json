@@ -6,7 +6,8 @@
     "styles": "2.x",
     "store": "0.x",
     "sitemap": "0.x",
-    "docs": "0.x"
+    "docs": "0.x",
+    "assets": "0.x"
   },
   "mustUpdateAt": "2018-09-05",
   "scripts": {
@@ -55,7 +56,9 @@
     "vtex.store-link": "0.x",
     "vtex.product-gifts": "0.x",
     "vtex.product-price": "1.x",
-    "vtex.disclosure-layout": "1.x"
+    "vtex.disclosure-layout": "1.x",
+    "vtex.responsive-layout": "0.x",
+    "bookstoretheme.sandbox": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
