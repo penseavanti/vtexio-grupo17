@@ -16,9 +16,7 @@
   },
   "product-price-savings#summary": {
     "props": {
-      "markers": [
-        "discount"
-      ],
+      "markers": ["discount"],
       "blockClass": "summary"
     }
   },
@@ -29,9 +27,7 @@
       "preventHorizontalStretch": true,
       "marginBottom": 4
     },
-    "children": [
-      "product-selling-price"
-    ]
+    "children": ["product-selling-price"]
   },
   "flex-layout.row#selling-price-savings": {
     "props": {
@@ -54,9 +50,6 @@
       "marginBottom": 2,
       "marginTop": 5
     },
-    "children": [
-      "product-list-price",
-      "product-price-savings"
-    ]
+    "children": ["product-list-price", "product-price-savings"]
   }
 }

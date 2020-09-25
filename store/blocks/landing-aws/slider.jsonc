@@ -1,5 +1,5 @@
 {
-  "slider-layout#landing-page": {
+  "slider-layout#landing-aws": {
     "props": {
       "itemsPerPage": {
         "desktop": 1,

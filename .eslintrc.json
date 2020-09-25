@@ -1,0 +1,16 @@
+{
+  "extends": ["eslint-config-vtex"],
+  "ecmaFeatures": {
+    "jsx": true,
+    "modules": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "modules": true,
+      "jsx": true
+    },
+    "ecmaVersion": 2017,
+    "sourceType": "module"
+  },
+  "plugins": ["eslint-plugin-react"]
+}

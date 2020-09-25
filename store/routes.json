@@ -5,7 +5,10 @@
   "store.custom#faq": {
     "path": "/faq"
   },
-  "store.custom#landing-page": {
-    "path": "/landing-page"
+  "store.custom#landing-aws": {
+    "path": "/promos/aws"
+  },
+  "store.custom#landing-blackfriday": {
+    "path": "/promos/black-friday"
   }
 }

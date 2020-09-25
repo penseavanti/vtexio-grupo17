@@ -1,0 +1,11 @@
+{
+  "store.custom#landing-blackfriday": {
+    "blocks": ["videos#blackfriday"]
+  },
+  "videos#blackfriday": {
+    "props": {
+      "videoUrl": "https://youtu.be/bxMOrYIwN4g",
+      "repeat": 0
+    }
+  }
+}

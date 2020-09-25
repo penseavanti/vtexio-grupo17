@@ -1,0 +1,33 @@
+{
+  "slider-layout#landing-blackfriday": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass": "landing-carousel"
+    },
+    "children": ["image#landing1", "image#landing2", "image#landing3"]
+  },
+  "image#landing1": {
+    "props": {
+      "src": "https://hackastore.s3.us-east-1.amazonaws.com/aws.jpg",
+      "blockClass": "landing-carousel"
+    }
+  },
+  "image#landing2": {
+    "props": {
+      "src": "https://hackastore.s3.us-east-1.amazonaws.com/aws.jpg",
+      "blockClass": "landing-carousel"
+    }
+  },
+  "image#landing3": {
+    "props": {
+      "src": "https://hackastore.s3.us-east-1.amazonaws.com/aws.jpg",
+      "blockClass": "landing-carousel"
+    }
+  }
+}

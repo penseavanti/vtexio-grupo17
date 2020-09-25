@@ -1,8 +1,0 @@
-{
-  "store.custom#landing-page": {
-    "blocks": [
-      "videos",
-      "slider-layout#landing-page"
-    ]
-  }
-}
