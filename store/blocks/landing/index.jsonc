@@ -1,0 +1,7 @@
+{
+  "store.custom#landing-page": {
+    "blocks": [
+      "slider-layout#landing-page"
+    ]
+  }
+}

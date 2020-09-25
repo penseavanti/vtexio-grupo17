@@ -1,0 +1,10 @@
+.sliderTrackContainer--landing-carousel {
+  width: 100%;
+  max-width: none;
+}
+
+.sliderLayoutContainer--landing-carousel {
+  justify-content: center;
+  background-color: #f4ede7 !important;
+  position: relative;
+}

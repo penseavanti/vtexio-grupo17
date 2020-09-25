@@ -4,5 +4,8 @@
   },
   "store.custom#faq": {
     "path": "/faq"
+  },
+  "store.custom#landing-page": {
+    "path": "/landing-page"
   }
 }
