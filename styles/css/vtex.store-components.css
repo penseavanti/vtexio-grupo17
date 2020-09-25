@@ -144,6 +144,149 @@
   font-size: 30px;
 }
 
+.productBrand {
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.skuSelectorName {
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.skuSelectorSelectorImageValue {
+  color: #7B6C55;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.skuSelectorTextContainer {
+  margin-bottom: 15px;
+}
+
+.skuSelectorInternalBox--skuSelector {
+  border: inherit;
+}
+
+.frameAround--skuSelector {
+  border-radius: 0;
+  border-color: #000;
+}
+
+.productDescriptionText {
+  text-align: center;
+}
+
+@media (max-width: 575.98px) {
+  .productDescriptionText {
+    margin-bottom: 40px;
+  }
+}
+
+.productDescriptionTitle {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.productDescriptionText {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+
+.shippingContainer {
+  position: relative;
+  margin-top: 20px;
+}
+
+.shippingContainer :global(.vtex-input__label) {
+  bottom: -40px;
+  font-size: 0;
+  font-weight: 400;
+  color: #000000;
+  position: relative;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.shippingContainer :global(.vtex-input__label)::before {
+  content: 'CALCULAR ENTREGA:';
+  font-size: 12px;
+}
+
+@media (max-width: 575.98px) {
+  .shippingContainer :global(.vtex-input__label) {
+    bottom: 0;
+  }
+}
+
+.shippingContainer :global(.vtex-input-prefix__group) {
+  border: 0;
+  border-radius: 0;
+}
+
+.shippingContainer :global(.vtex-address-form__postalCode) {
+  position: relative;
+  text-align: right;
+  font-size: 12px;
+}
+
+.shippingContainer :global(.vtex-address-form-4-x-input) {
+  height: 40px;
+  position: absolute;
+  border-radius: 0;
+  width: 450px;
+  right: 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #707070;
+}
+
+@media (max-width: 575.98px) {
+  .shippingContainer :global(.vtex-address-form-4-x-input) {
+    width: 100%;
+  }
+}
+
+.shippingContainer :global(.vtex-button) {
+  position: absolute;
+  top: 20px;
+  height: 40px;
+  border: 0;
+  width: 100px;
+  right: 0;
+  background-color: transparent;
+  border-radius: 0;
+  color: #000;
+  font-size: 0;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.shippingContainer :global(.vtex-button)::after {
+  content: 'OK';
+  font-size: 12px;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 40px;
+  width: 80px;
+  cursor: pointer;
+}
+
 @media (min-width: 1024px) {
   .searchBarContainer :global(.vtex-styleguide-9-x-input) {
     min-width: 256px;

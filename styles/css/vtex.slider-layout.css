@@ -1,4 +1,5 @@
 .sliderLayoutContainer {
+  margin-bottom: 100px;
   justify-content: center;
 }
 .sliderLayoutContainer--carousel {

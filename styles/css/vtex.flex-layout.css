@@ -97,6 +97,24 @@
   padding-bottom: 1rem;
 }
 
+.flexRow--buyButtonProduct :global(.vtex-button) {
+  border: 0;
+  outline: none;
+  height: 55px;
+  font-size: 12px;
+  font-weight: 800;
+  border-radius: 0;
+  background-color: #000;
+}
+
+.flexRow--productDescriptionText {
+  text-align: center;
+}
+
+@media only screen and (min-width: 640px) {
+  .flexRow--productDescriptionText {
+    margin: 100px 0;
+  }
 .main-header-mobile-search-bar :global(.vtex-store-components-3-x-searchBarContainer) {
   width: 100%;
 }
