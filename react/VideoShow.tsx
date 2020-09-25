@@ -1,1 +1,1 @@
-export { default } from "./components/VideoShow";
+export { default } from './components/VideoShow'

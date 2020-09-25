@@ -1,9 +1,5 @@
 {
-  "extends": ["eslint-config-vtex"],
-  "ecmaFeatures": {
-    "jsx": true,
-    "modules": true
-  },
+  "extends": ["eslint-config-vtex", "plugin:react/recommended"],
   "parserOptions": {
     "ecmaFeatures": {
       "modules": true,
@@ -12,5 +8,8 @@
     "ecmaVersion": 2017,
     "sourceType": "module"
   },
-  "plugins": ["eslint-plugin-react"]
+  "plugins": ["eslint-plugin-react"],
+  "rules": {
+    "react/prop-types": "off"
+  }
 }
