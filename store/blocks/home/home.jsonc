@@ -6,11 +6,12 @@
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
       "flex-layout.row#deals",
-      "rich-text#shelf-title",
-      "flex-layout.row#shelf",
+      "rich-text#shelf-title-1",
+      "flex-layout.row#shelf-1",
       "info-card#home",
       "rich-text#question",
-      "rich-text#link",
+      "rich-text#shelf-title-2",
+      "flex-layout.row#shelf-2",
       "newsletter"
     ]
   },
@@ -48,23 +49,52 @@
     }
   },
 
-  "rich-text#shelf-title": {
+  "rich-text#shelf-title-1": {
     "props": {
       "text": "## MAIS VENDIDOS",
       "blockClass": "shelfTitle"
     }
   },
-  "flex-layout.row#shelf": {
+  "flex-layout.row#shelf-1": {
     "children": ["list-context.product-list#demo1"]
   },
   "list-context.product-list#demo1": {
     "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
+    "children": ["slider-layout#demo-products-1"],
     "props": {
       "orderBy": "OrderByTopSaleDESC"
     }
   },
-  "slider-layout#demo-products": {
+  "slider-layout#demo-products-1": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+
+  "rich-text#shelf-title-2": {
+    "props": {
+      "text": "## NOVIDADES DA SEMANA",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf-2": {
+    "children": ["list-context.product-list#demo2"]
+  },
+  "list-context.product-list#demo2": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products-2"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products-2": {
     "props": {
       "itemsPerPage": {
         "desktop": 4,
@@ -83,9 +113,9 @@
       "isFullModeStyle": false,
       "textPosition": "left",
       "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
+      "headline": "Acesse nossa lista de livros",
+      "callToActionText": "Ir",
+      "callToActionUrl": "/books",
       "blockClass": "info-card-home",
       "textAlignment": "center"
     }
@@ -93,15 +123,8 @@
 
   "rich-text#question": {
     "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
+      "text": "**Experimente a função de escutar a descrição do livro**",
       "blockClass": "question"
-    }
-  },
-
-  "rich-text#link": {
-    "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
     }
   }
 }

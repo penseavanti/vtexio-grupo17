@@ -1,3 +1,7 @@
 .wrapper--sticky-header--stuck :global(.vtex-menu-2-x-submenuContainer) {
   top: 0;
 }
+
+.container--sticky-header {
+  z-index: 9999;
+}

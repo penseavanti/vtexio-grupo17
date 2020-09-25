@@ -41,7 +41,7 @@
   font-size: 14px;
 }
 .flexRow--deals {
-  background-color: #F4EDE7;
+  background-color: #f4ede7;
   padding: 14px 0px;
 }
 
@@ -115,6 +115,8 @@
   .flexRow--productDescriptionText {
     margin: 100px 0;
   }
-.main-header-mobile-search-bar :global(.vtex-store-components-3-x-searchBarContainer) {
-  width: 100%;
+  .main-header-mobile-search-bar
+    :global(.vtex-store-components-3-x-searchBarContainer) {
+    width: 100%;
+  }
 }
