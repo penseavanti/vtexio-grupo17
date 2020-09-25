@@ -9,7 +9,6 @@
     "children": [
       "flex-layout.row#1-desktop",
       "flex-layout.row#2-desktop",
-      "flex-layout.row#3-desktop",
       "sticky-layout#4-desktop"
     ]
   },
@@ -29,22 +28,8 @@
   },
   "notification.bar#home": {
     "props": {
-      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
+      "content": "itens selecionados com desconto. venha conferir!"
     }
-  },
-  "flex-layout.row#3-desktop": {
-    "props": {
-      "blockClass": "menu-link",
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
-    },
-    "children": [
-      "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"
-    ]
   },
   "flex-layout.col#spacer": {
     "props": {
@@ -68,6 +53,7 @@
     },
     "children": [
       "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer",
       "flex-layout.col#category-menu",
       "flex-layout.col#spacer",
       "search-bar",
@@ -100,18 +86,28 @@
     "children": ["sticky-layout#1-mobile"]
   },
   "sticky-layout#1-mobile": {
-    "children": ["flex-layout.row#1-mobile"]
+    "children": ["flex-layout.row#1-mobile", "flex-layout.row#2-mobile"]
   },
   "flex-layout.row#1-mobile": {
     "children": [
       "drawer",
       "logo#mobile",
       "flex-layout.col#spacer",
-      "login",
       "minicart.v2"
     ],
     "props": {
       "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#2-mobile": {
+    "children": [
+      "search-bar"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile-search-bar",
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
       "fullWidth": true
@@ -123,9 +119,9 @@
 
   "menu#drawer": {
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#department-books",
+      "menu-item#department-notebooks-pens",
+      "menu-item#department-office-supplies"
     ],
     "props": {
       "orientation": "vertical"

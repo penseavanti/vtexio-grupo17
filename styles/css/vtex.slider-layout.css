@@ -3,6 +3,7 @@
 }
 .sliderLayoutContainer--carousel {
   background-color: #F0F0F0;
+  margin-top: -84px;
 }
 
 .sliderTrackContainer {
@@ -25,3 +26,9 @@
   padding-left: .5rem;
   padding-right: .5rem;
 }
+
+/* @media (max-width) {
+  .sliderLayoutContainer--carousel{
+    margin-top: -84px;
+  }
+} */

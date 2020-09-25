@@ -1,0 +1,3 @@
+.wrapper--sticky-header--stuck :global(.vtex-menu-2-x-submenuContainer) {
+  top: 0;
+}

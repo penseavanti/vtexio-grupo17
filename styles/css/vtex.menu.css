@@ -1,3 +1,40 @@
+.styledLinkContainer {
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  line-height: 12px;
+  color: #17100d;
+}
+
+.submenuContainer {
+  top: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.submenu {
+  box-shadow: 0px 5px 14px -10px black;
+  border: none;
+  border-top: 1px solid #CCB28A;
+  padding: 0;
+  margin: 0;
+}
+
+.submenuWrapper {
+  padding: 0;
+  margin: 0;
+}
+
+.styledLinkContent {
+  font-weight: normal;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  line-height: 35px;
+  text-align: left;
+  color: #000;
+
+}
+
 .menuContainerNav--sidebarMenu{
   max-width: 200px;
 }
@@ -14,4 +51,8 @@
   font-size: 12px;
   color: #000000;
 }
+
+
+
+
 

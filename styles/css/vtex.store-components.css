@@ -1,13 +1,41 @@
 .notificationBarContainer {
-  background-color: #e6f1e6;
-  color: #03034e;
-  font-weight: 700;
-  font-size: 12px;
-  text-decoration: underline;
+  background-color: #7B6C55;
+  font-weight: normal;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  line-height: 12px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  z-index: 999;
 }
 
+
+
 .searchBarContainer :global(.vtex-styleguide-9-x-input) {
-  max-width: 208px;
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  line-height: 12px;
+  color: #000;
+  background: transparent;
+  padding-left: 5px;
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group) {
+  border: none;
+  border-bottom: 1px solid;
+  border-radius: 0;
+  background: transparent;
+}
+
+.searchBarContainer .searchIcon {
+  color: #CCB28A;
+}
+
+.autoCompleteOuterContainer :global(.vtex-input__suffix) {
+  background: transparent;
+  padding-right: 5px;
 }
 
 .infoCardContainer--info-card-home {
@@ -114,4 +142,22 @@
   color: #3f3f40;
   font-weight: bold;
   font-size: 30px;
+}
+
+@media (min-width: 1024px) {
+  .searchBarContainer :global(.vtex-styleguide-9-x-input) {
+    min-width: 256px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .searchBarContainer {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    position: fixed;
+    padding: 0px 25px 12px;
+    background-color: #ffffffb3;
+  }
 }
