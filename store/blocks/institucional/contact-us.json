@@ -1,0 +1,145 @@
+{
+  "store.custom#contact-us": {
+    "blocks": [
+      "responsive-layout.desktop#contact-us",
+      "responsive-layout.tablet#contact-us",
+      "responsive-layout.phone#contact-us"
+    ]    
+  },
+
+  "responsive-layout.desktop#contact-us": {
+    "children": [
+      "stack-layout#institutional-banner",
+      "flex-layout.row#contact-us-desktop"
+    ]
+  },
+  "responsive-layout.tablet#contact-us": {
+    "children": [
+      "stack-layout#institutional-banner",
+      "flex-layout.row#contact-us-menu-mobile",
+      "flex-layout.row#contact-us-mobile"
+    ]
+  },
+  "responsive-layout.phone#contact-us": {
+    "children": [
+      "flex-layout.row#contact-us-menu-mobile",
+      "flex-layout.row#contact-us-mobile"
+    ]
+  },
+
+  "flex-layout.row#contact-us-desktop": {
+    "children": [  
+      "flex-layout.col#institutional-sidebar-desktop",    
+      "flex-layout.col#content-contact-us"
+    ],
+    "props": {
+      "blockClass": "institutionalContainer"
+    }
+  },
+
+  "flex-layout.row#contact-us-menu-mobile": {
+    "children": [  
+      "flex-layout.col#institutional-sidebar-mobile"
+    ],
+    "props": {
+      "blockClass": "institutionalContainer"
+    }
+  },
+
+  "flex-layout.row#contact-us-mobile": {
+    "children": [      
+      "flex-layout.col#content-contact-us"
+    ],
+    "props": {
+      "blockClass": "institutionalContainer"
+    }
+  },
+
+  "flex-layout.col#content-contact-us": {
+    "children": [
+      "rich-text#title-contact-us",
+      "flex-layout.row#form"
+    ],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#title-contact-us": {
+    "props": {
+      "text":
+      "FALE CONOSCO",
+      "blockClass": "pageTitle",
+      "textAlignment": "CENTER"
+    }
+  },
+  
+
+  "flex-layout.row#form": {
+    "children": [
+      "flex-layout.col#form"
+    ]
+  },
+  "flex-layout.col#form": {
+    "children": [
+      "form"
+    ],
+    "props": {  
+      "blockClass": "formContactUs"
+    }
+  },
+  "form": {
+    "props": {  
+      "entity": "contato",  
+      "schema": "Livres"
+    },  
+    "children": [   
+      "form-input.text#email",
+      "form-input.text#subject",
+      "form-input.textarea#message", 
+      "form-submit"  
+    ],  
+    "blocks": [
+      "form-success"
+    ]
+  },
+  "form-success": {  
+    "children": [ 
+      "rich-text#successSubmit"  
+    ]  
+  },  
+  "rich-text#successSubmit": {  
+    "props": {  
+      "text": "Succesfully submitted the data!",  
+      "textAlignment": "CENTER",  
+      "textPosition": "CENTER"  
+    }  
+  },  
+  "form-input.text#email": {  
+    "props": {  
+      "pointer": "#/properties/email",
+      "label": "E-mail"
+    }  
+  },    
+  "form-input.text#subject": {  
+    "props": {  
+      "pointer": "#/properties/subject",
+      "label": "Assunto"
+    }  
+  },
+  "form-input.textarea#message": {  
+    "props": {  
+      "pointer": "#/properties/message",
+      "label": "Mensagem"
+    }  
+  },
+  "form-submit": {  
+    "props": {  
+      "label": "Enviar"  
+    }  
+  }
+
+
+
+}
