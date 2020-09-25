@@ -4,8 +4,7 @@
   },
   "videos#blackfriday": {
     "props": {
-      "videoUrl": "https://youtu.be/bxMOrYIwN4g",
-      "repeat": 0
+      "videoId": "bxMOrYIwN4g"
     }
   }
 }

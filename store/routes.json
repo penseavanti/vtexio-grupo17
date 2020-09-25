@@ -6,9 +6,9 @@
     "path": "/faq"
   },
   "store.custom#landing-aws": {
-    "path": "/promos/aws"
+    "path": "/promo/aws"
   },
   "store.custom#landing-blackfriday": {
-    "path": "/promos/black-friday"
+    "path": "/promo/black-friday"
   }
 }
